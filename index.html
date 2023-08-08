@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sorting Algorithm Visualizer</title>
+  
+  <link href="style.css" rel="stylesheet">
+  
+  </link>
+</head>
+<body onload = "visualizeSorting()" >
+  <header>
+     <h1 class="heading">Sorting Visualizer</h1>
+   <button onclick="visualizeSorting()" class="btn btn-light">Generate New Array
+
+  </button>
+  <button onclick="visualizebubbleSorting(); bubbleCode();" type="button" class="btn btn-light">Bubble Sort
+  
+  </button>
+
+  <button onclick="visualizemergeSorting(); mergeCode(); "type="button" class="btn btn-light">Merge Sort
+  
+  </button>
+  <button onclick="visualizequickSorting(); quickCode();"type="button" class="btn btn-light">Quick Sort
+  
+  </button>
+  <div class="textboxes">
+    <div class="text-box Codebox">
+      <div class="topic">Javascript Code: </div>
+<textarea id="mytextarea">
+  //Generate array to visualise
+  function generateRandomNumbers(n) {
+    const numbers = [];
+    for (let i = 0; i < n; i++) {
+      numbers.push(Math.floor(Math.random() *  100) + 1);
+    }
+    return numbers;
+   
+  }
+
+  // Create bars based on the array
+  function createBars(array) {
+    const barsContainer = document.getElementById("bars-container");
+    barsContainer.innerHTML = "";
+    for (const num of array) {
+      const bar = document.createElement("div");
+      bar.classList.add("bar");
+      bar.style.height = num * 2 + "px";
+      barsContainer.appendChild(bar);
+    }
+  }
+  //visualize array
+  async function visualizeSorting() {
+    const array = generateRandomNumbers(30); // Change the number of bars here
+    createBars(array);
+    
+  }
+
+</textarea>
+<button>Copy Code</button>
+    </div>
+
+  </div>
+  </header>
+ 
+  <div class="container" id="bars-container"></div>
+ 
+  <script src="script.js">
+   
+    
+      // Quick Sort
+      
+
+    // Start the visualization when the page loads
+   
+  </script>
+</body>
+</html>

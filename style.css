@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0f2b41;
+  }
+  .heading{
+    color: #fff;
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 50px;
+  }
+  .container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+    right: 30px;
+    position: absolute;
+  }
+  header{
+    top: 10px;
+    position: absolute;
+    left: 100px;
+
+  }
+
+  .bar {
+    width: 20px;
+    height: 200px;
+    background-color: #ccb21e;;
+    display: inline-block;
+  }
+  .textboxes .text-box{
+   height: 380px;
+   max-width: 660px;
+   width: 100%;
+   margin: 55px 0;
+
+
+  }.textboxes .text-box .topic{
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Inter';
+    margin: 4px;
+
+
+  }
+  .textboxes .text-box textarea{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    border: 2px solid #265df2;
+    border-radius: 8px;
+    text-align: left;    
+    background-color: #000;
+    color: #fff;
+
+
+  }
+  .textboxes .text-box textarea::-webkit-scrollbar{
+   display: none;
+
+
+  }
+
+  .textboxes .text-box button{
+   height: 45px;
+   width: 155px;
+  color: #fff;
+  background-color: #265df2;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  border: 2px solid #265df2;
+
+  }
