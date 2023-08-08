@@ -5,6 +5,7 @@ let mytextarea=document.getElementById('mytextarea');
     CopyButton.onclick=function(){
       mytextarea.select();
       document.execCommand("Copy");
+      CopyButton.innerText="Code copied!"
     }
 
 
