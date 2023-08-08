@@ -82,3 +82,11 @@ body {
   border: 2px solid #265df2;
 
   }
+  .btn-light{
+    background: #fff;
+    border-radius: 5px;
+    border: 2px solid #265df2;
+    color: #265df2;
+    font-family: 'Inter';
+    padding: 8px;
+  }

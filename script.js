@@ -1,4 +1,12 @@
 // // Generate random numbers for bars
+let mytextarea=document.getElementById('mytextarea');
+    let CopyButton=document.getElementById("CopyButton");
+
+    CopyButton.onclick=function(){
+      mytextarea.select();
+      document.execCommand("Copy");
+    }
+
 
 function generateRandomNumbers(n) {
      const numbers = [];
